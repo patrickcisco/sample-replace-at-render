@@ -14,6 +14,16 @@
         {"name": "Patrick Riel", "email": "priel@cisco.com"}
     ],
     "replaceAtRender": {
+      "demo-replace-at-render": [
+        {
+          "type": "general",
+          "fields": [
+            {
+              "find": "{{event-mode}}", "replace": "demo-replace-at-render"
+            }
+          ]
+        }
+      ],
       "default": [
         {
           "type": "leaseInfo",
@@ -27,6 +37,7 @@
         {
           "type": "general",
           "fields": [
+              {"find": "{{event-mode}}", "replace": "default"},
               {"find": "{{test-variable}}", "replace": "hey this is replaceable.... cool!"},
               {"find": "dummy", "replace": "placeholder"},
               {"find": "Lorem Ipsum", "replace": "Cisco Lorem Ipsum"},
