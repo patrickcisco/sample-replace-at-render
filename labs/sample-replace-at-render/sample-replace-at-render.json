@@ -27,6 +27,7 @@
         {
           "type": "general",
           "fields": [
+              {"find": "{{test-variable}}", "replace": "hey this is replaceable.... cool!"},
               {"find": "dummy", "replace": "placeholder"},
               {"find": "Lorem Ipsum", "replace": "Cisco Lorem Ipsum"},
               {"find": "/cisco/gi", "replace": "Cisco", "regex": true},
